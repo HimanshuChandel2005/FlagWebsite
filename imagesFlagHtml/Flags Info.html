@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Flags Info_files/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags Info</title>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+    <h1> Flags </h1>
+    <marquee>
+        All Flags At One Place
+    </marquee>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="./Flags Info_files/whiteFlag.png" class="logo">
+
+    <nav>
+        <a href="http://127.0.0.1:5500/#">Home</a>
+        <a href="http://127.0.0.1:5500/#">About</a>
+        <a href="http://127.0.0.1:5500/#">Contact </a>
+    </nav>
+    </div>
+    <br>
+    <div class="slider">
+    <img src="./Flags Info_files/allFlag.jpg" class="slider">
+    </div>
+    <br> 
+    <table>
+        
+        <tbody><tr>
+            <th>Name</th>
+            <th>Flag</th>
+            <th>Founder</th>
+        </tr>
+        <tr>
+            <td>
+                <p>INDIA</p>
+            </td>
+            <td>
+                <img src="./Flags Info_files/INDFLG.png">
+            </td>
+            <td>
+                <p>The design of the Indian national flag is credited to Pingali Venkayya, an Indian freedom fighter and political activist. He presented his design to Mahatma Gandhi during the meeting of the Indian National Congress in 1921, and it was subsequently adopted as the national flag of India.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Pkaistan</p>
+            </td>
+            <td>
+                <img src="./Flags Info_files/pakflg.png">
+            </td><td>
+                <p>The founder of Pakistan's national flag is Syed Amir-uddin Kedwaii. He designed the flag in 1947, shortly before Pakistan gained independence from British rule.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>China</p>
+            </td>
+            <td>
+                <img src="./Flags Info_files/chnaflg.png">
+            </td>
+            <td>
+                <p>The current flag of China, commonly known as the Five-starred Red Flag, was designed by Zeng Liansong. He created this flag in 1949 under the guidance of the Chinese Communist Party (CCP), which was led by figures such as Mao Zedong during the establishment of the People's Republic of China.
+                </p>
+                </td>
+        </tr>
+    </tbody></table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
